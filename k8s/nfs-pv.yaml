@@ -14,7 +14,7 @@ spec:
     readOnly: false
     volumeHandle: azure-nfs-pv
     volumeAttributes:
-      resourceGroup:RG-AZUREFILES-TEST
+      resourceGroup: RG-AZUREFILES-TEST
       storageAccount: nfstestacnt1  
       shareName: mynfsshare
       protocol: nfs
