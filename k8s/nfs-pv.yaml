@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfs-pv
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteMany
+  storageClassName: ""
+  persistentVolumeReclaimPolicy: Retain
+  csi:
+    driver: file.csi.azure.com
+    readOnly: false
+    volumeHandle: azure-nfs-pv
+    volumeAttributes:
+      resourceGroup:RG-AZUREFILES-TEST
+      storageAccount: nfstestacnt1  
+      shareName: mynfsshare
+      protocol: nfs
