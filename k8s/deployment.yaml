@@ -5,7 +5,7 @@ metadata:
   labels:
     app: node-nfs-app
 spec:
-  replicas: 2  # 테스트용이므로 1개
+  replicas: 1  # 테스트용이므로 1개
   selector:
     matchLabels:
       app: node-nfs-app
