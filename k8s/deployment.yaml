@@ -13,8 +13,6 @@ spec:
     metadata:
       labels:
         app: node-nfs-app
-    annotations:
-        redeploy-timestamp: "2025-09-18T10:13:00"
     spec:
       containers:
       - name: nodejs
